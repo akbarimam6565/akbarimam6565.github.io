@@ -1,67 +1,276 @@
 
-<!DOCTYPE html>
-    <html>
-        <head>
-            <title>Profil Website</title>
-        </head>
-    
-        <body bgcolor="F5F0E6">
-    
-            <table border="1" width="900" align="center">
-                <!-- HEADER -->
-    <tr>
-        <td colspan="2" align="center" bgcolor="183B4E">
-            <font color="white">
-            <h1>Website Akbar</h1>
-            <i>Stefen young</i>
-            </font>
-        </td>
-    </tr>
-                <!-- MENU 4 HYPERLINK -->
-<tr>
-        <td colspan="2" align="center">
-            <a href="index.html">Beranda</a> |
-            <a href="Profil.html">Profil</a> |
-            <a href="kegiatan.html">Kegiatan</a> |
-            <a href="kontak.html">Kontak</a>
-        </td>
-    </tr>
-<tr>
-            <!-- ISI -->
-    <td>
-        <h1>PROFIL PEMBUAT WEBSITE</h1>
-        <p align="right">
-        <p><b>NAMA:</b>AKBAR IMAM SUGEMA</p>
-        <P><B>KELAS</B>XI DKV 2</P>
-        <P><B>JURUSAN</B>DESAIN KOMUNIKASI VISUAL</P>
-        <p>Perkenalkan Website rawwrrrrr</p>
-    </td>
- <!-- TAUTAN LINK -->
- <td valign="top">
-            <h3>Tautan Eksternal</h3>
-            <ol>
-                <li><a href="https://www.mawan.net">Website Mawan</a></li>
-                <li><a href="https://github.com">Github</a></li>
-                <li><a href="https://wikipedia.org">Wikipedia</a></li>
-                <li><a href="https://www.w3schools.com">W3Schools</a></li>
-            </ol>
 
-        </td>
-    </tr>
-                <!-- FOOOTER -->
-  <tr bgcolor="#183B4E">
-    <td colspan="2" align="center">
-        <font color="white">
-            <p>Website Ekonomi Indonesia</p>
-        </font>
-<p align="right">
-                <font color="4CAF50" size="2">
-                    &copy; 2026 Akbar Imam
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Website</title>
+
+    <style>
+        /* RESET DAN DASAR */
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 40px 16px;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            color: #f0f4ff;
+            background-color: #080b20;
+            background-image:
+                radial-gradient(circle at 15% 20%, #34205e 0, transparent 35%),
+                radial-gradient(circle at 85% 75%, #102e58 0, transparent 35%),
+                radial-gradient(circle at 50% 0%, #19254b 0, transparent 50%);
+            min-height: 100vh;
+        }
+
+        /* HIASAN BINTANG */
+        body::before {
+            content: "";
+            position: fixed;
+            inset: 0;
+            pointer-events: none;
+            z-index: -1;
+            background-image:
+                radial-gradient(2px 2px at 20% 30%, white 50%, transparent 100%),
+                radial-gradient(2px 2px at 70% 20%, #8be9fd 50%, transparent 100%),
+                radial-gradient(1px 1px at 40% 80%, white 50%, transparent 100%),
+                radial-gradient(2px 2px at 85% 60%, #c4b5fd 50%, transparent 100%),
+                radial-gradient(1px 1px at 10% 70%, white 50%, transparent 100%),
+                radial-gradient(1px 1px at 60% 45%, white 50%, transparent 100%);
+            background-size: 300px 300px;
+        }
+
+        /* TABEL UTAMA */
+        table {
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto;
+            border: 1px solid rgba(139, 92, 246, 0.6);
+            border-spacing: 0;
+            border-collapse: separate;
+            border-radius: 22px;
+            overflow: hidden;
+            background: rgba(13, 20, 48, 0.88);
+            box-shadow:
+                0 0 25px rgba(91, 67, 199, 0.25),
+                0 0 60px rgba(34, 211, 238, 0.08);
+        }
+
+        td {
+            padding: 22px;
+            border: none;
+            border-bottom: 1px solid rgba(148, 163, 255, 0.16);
+            vertical-align: top;
+        }
+
+        /* HEADER */
+        tr:first-child td {
+            background: linear-gradient(135deg, #172554, #312e81, #164e63) !important;
+            color: white;
+            padding: 32px 20px;
+            border-bottom: 1px solid #818cf8;
+        }
+
+        tr:first-child h1 {
+            margin: 0 0 10px;
+            font-size: 32px;
+            letter-spacing: 2px;
+            text-shadow: 0 0 15px rgba(103, 232, 249, 0.6);
+        }
+
+        tr:first-child i {
+            color: #a5f3fc;
+            letter-spacing: 3px;
+        }
+
+        /* MENU NAVIGASI */
+        tr:nth-child(2) td {
+            background: rgba(20, 30, 65, 0.95);
+            text-align: center;
+            padding: 18px 10px;
+        }
+
+        a {
+            color: #67e8f9;
+            text-decoration: none;
+            transition: color 0.25s ease, text-shadow 0.25s ease;
+        }
+
+        tr:nth-child(2) a {
+            display: inline-block;
+            margin: 5px 7px;
+            padding: 9px 13px;
+            border: 1px solid rgba(103, 232, 249, 0.25);
+            border-radius: 12px;
+            background: rgba(49, 46, 129, 0.25);
+        }
+
+        a:hover {
+            color: #ffffff;
+            text-shadow: 0 0 10px #67e8f9;
+        }
+
+        tr:nth-child(2) a:hover {
+            background: rgba(99, 102, 241, 0.35);
+            border-color: #67e8f9;
+        }
+
+        /* JUDUL DAN TEKS PROFIL */
+        h1, h2, h3 {
+            color: #c4b5fd;
+        }
+
+        td h1 {
+            font-size: 24px;
+            line-height: 1.4;
+            margin-top: 0;
+            text-shadow: 0 0 12px rgba(167, 139, 250, 0.2);
+        }
+
+        td h3 {
+            margin-top: 0;
+            padding-bottom: 10px;
+            border-bottom: 1px solid rgba(103, 232, 249, 0.3);
+        }
+
+        td p {
+            line-height: 1.8;
+            color: #dbeafe;
+        }
+
+        td b {
+            color: #67e8f9;
+            margin-right: 5px;
+        }
+
+        /* TAUTAN EKSTERNAL */
+        ol {
+            padding-left: 22px;
+        }
+
+        li {
+            padding: 8px 0;
+            color: #a5b4fc;
+        }
+
+        li a {
+            overflow-wrap: anywhere;
+        }
+
+        li::marker {
+            color: #67e8f9;
+        }
+
+        /* FOOTER */
+        tr:last-child td {
+            background: linear-gradient(135deg, #101b3d, #183b4e) !important;
+            padding: 12px 22px;
+            border-bottom: none;
+        }
+
+        tr:last-child p {
+            margin: 10px 0;
+        }
+
+        tr:last-child p:last-of-type font {
+            color: #86efac !important;
+        }
+
+        /* RESPONSIF UNTUK HP */
+        @media (max-width: 600px) {
+            body {
+                padding: 20px 10px;
+            }
+
+            table {
+                width: 100%;
+                border-radius: 16px;
+            }
+
+            td {
+                padding: 15px;
+            }
+
+            tr:first-child h1 {
+                font-size: 25px;
+            }
+
+            td h1 {
+                font-size: 20px;
+            }
+
+            tr:nth-child(2) a {
+                margin: 4px 2px;
+                padding: 8px 9px;
+                font-size: 13px;
+            }
+        }
+    </style>
+</head>
+
+<body bgcolor="F5F0E6">
+
+    <table border="1" width="900" align="center">
+        <!-- HEADER -->
+        <tr>
+            <td colspan="2" align="center" bgcolor="183B4E">
+                <font color="white">
+                    <h1>Website Akbar</h1>
+                    <i>Stefen young</i>
                 </font>
-            </p>
-    </td>
-</tr>
-</table>
+            </td>
+        </tr>
+
+        <!-- MENU 4 HYPERLINK -->
+        <tr>
+            <td colspan="2" align="center">
+                <a href="index.html">Beranda</a> |
+                <a href="Profil.html">Profil</a> |
+                <a href="kegiatan.html">Kegiatan</a> |
+                <a href="kontak.html">Kontak</a>
+            </td>
+        </tr>
+
+        <!-- ISI -->
+        <tr>
+            <td>
+                <h1>PROFIL PEMBUAT WEBSITE</h1>
+                <p align="right">
+                <p><b>NAMA:</b>AKBAR IMAM SUGEMA</p>
+                <P><B>KELAS</B>XI DKV 2</P>
+                <P><B>JURUSAN</B>DESAIN KOMUNIKASI VISUAL</P>
+                <p>Perkenalkan Website rawwrrrrr</p>
+            </td>
+
+            <!-- TAUTAN LINK -->
+            <td valign="top">
+                <h3>Tautan Eksternal</h3>
+                <ol>
+                    <li><a href="https://www.mawan.net">Website Mawan</a></li>
+                    <li><a href="https://github.com">Github</a></li>
+                    <li><a href="https://wikipedia.org">Wikipedia</a></li>
+                    <li><a href="https://www.w3schools.com">W3Schools</a></li>
+                </ol>
+            </td>
+        </tr>
+
+        <!-- FOOTER -->
+        <tr bgcolor="#183B4E">
+            <td colspan="2" align="center">
+                <font color="white">
+                    <p>Website Ekonomi Indonesia</p>
+                </font>
+                <p align="right">
+                    <font color="4CAF50" size="2">
+                        &copy; 2026 Akbar Imam
+                    </font>
+                </p>
+            </td>
+        </tr>
+    </table>
 
 </body>
 </html>
