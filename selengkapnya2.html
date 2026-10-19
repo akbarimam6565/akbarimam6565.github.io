@@ -1,72 +1,265 @@
 
+
 <!DOCTYPE html>
-<html>
+<html lang="id">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Seputar Ekonomi Indonesia</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 30px 15px;
+            font-family: Arial, sans-serif;
+            color: #e6eaff;
+            background:
+                radial-gradient(ellipse at top left, #29205e 0%, transparent 45%),
+                radial-gradient(ellipse at bottom right, #102e59 0%, transparent 45%),
+                #080b20;
+            min-height: 100vh;
+        }
+
+        body::before {
+            content: "";
+            position: fixed;
+            inset: 0;
+            pointer-events: none;
+            background-image:
+                radial-gradient(2px 2px at 20% 30%, white 50%, transparent 100%),
+                radial-gradient(2px 2px at 70% 20%, #9eeeff 50%, transparent 100%),
+                radial-gradient(1px 1px at 40% 80%, white 50%, transparent 100%),
+                radial-gradient(2px 2px at 85% 65%, #c9a7ff 50%, transparent 100%);
+            background-size: 250px 250px;
+            opacity: 0.65;
+            z-index: -1;
+        }
+
+        table {
+            width: 100%;
+            max-width: 900px;
+            margin: auto;
+            border-collapse: separate;
+            border-spacing: 0;
+            overflow: hidden;
+            border: 1px solid #7657d5;
+            border-radius: 22px;
+            background: rgba(13, 18, 48, 0.94);
+            box-shadow: 0 0 30px rgba(125, 80, 255, 0.25);
+        }
+
+        td {
+            padding: 22px;
+            border-bottom: 1px solid rgba(139, 120, 255, 0.2);
+            vertical-align: top;
+        }
+
+        tr:first-child td {
+            text-align: center;
+            background: linear-gradient(135deg, #171b48, #512b85, #123f64);
+            color: white;
+        }
+
+        h1 {
+            margin: 5px 0 10px;
+            font-size: 32px;
+            text-shadow: 0 0 12px #8b7bff;
+        }
+
+        h2 {
+            color: #c5b6ff;
+            font-size: 26px;
+            margin-top: 5px;
+        }
+
+        h3 {
+            color: #75eaff;
+            margin-top: 5px;
+        }
+
+        p {
+            line-height: 1.8;
+            color: #d5ddff;
+        }
+
+        a {
+            color: #76eaff;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        a:hover {
+            color: #ffffff;
+            text-shadow: 0 0 10px #76eaff;
+        }
+
+        tr:nth-child(2) td {
+            text-align: center;
+            background: rgba(30, 35, 80, 0.75);
+        }
+
+        tr:nth-child(2) a {
+            display: inline-block;
+            margin: 5px;
+            padding: 9px 13px;
+            border: 1px solid #6a5acd;
+            border-radius: 20px;
+            background: rgba(100, 70, 190, 0.2);
+        }
+
+        tr:nth-child(2) a:hover {
+            background: #5940a8;
+        }
+
+        ol {
+            padding-left: 22px;
+            line-height: 2.2;
+        }
+
+        ol li::marker {
+            color: #76eaff;
+        }
+
+        tr:last-child td {
+            background: linear-gradient(135deg, #111735, #252052);
+            border-bottom: none;
+        }
+
+        tr:last-child p {
+            color: #ffffff;
+        }
+
+        tr:last-child p:last-child {
+            color: #79f2c0;
+            font-size: 13px;
+        }
+
+        td span {
+            font-family: inherit !important;
+            font-size: inherit !important;
+            font-weight: inherit !important;
+            color: inherit !important;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 15px 8px;
+            }
+
+            table,
+            tbody,
+            tr,
+            td {
+                display: block;
+                width: 100%;
+            }
+
+            td {
+                padding: 18px;
+            }
+
+            h1 {
+                font-size: 26px;
+            }
+
+            h2 {
+                font-size: 23px;
+            }
+
+            tr:nth-child(2) a {
+                margin: 4px 2px;
+            }
+        }
+    </style>
 </head>
 
-<body bgcolor="F5F0E6">
+<body>
 
-    <table border="1" width="900" align="center">
+<table>
     <!-- HEADER -->
     <tr>
-        <td colspan="2" align="center" bgcolor="183B4E">
-            <font color="white">
+        <td colspan="2">
             <h1>Website Akbar</h1>
             <i>Stefen Young</i>
-            </font>
         </td>
     </tr>
 
-<!-- MENU 4 HYPERLINK -->
-<tr>
-        <td colspan="2" align="center">
-            <a href="index.html">Beranda</a> |
-            <a href="Profil.html">Profil</a> |
-            <a href="kegiatan.html">Kegiatan</a> |
+    <!-- MENU 4 HYPERLINK -->
+    <tr>
+        <td colspan="2">
+            <a href="index.html">Beranda</a>
+            <a href="Profil.html">Profil</a>
+            <a href="kegiatan.html">Kegiatan</a>
             <a href="kontak.html">Kontak</a>
         </td>
     </tr>
-        <!-- ISI -->
+
+    <!-- ISI -->
     <tr>
         <td>
-<center>
-</center>
-            <h2><span class="iNqyIf" data-sfc-cp="" jsaction="" jscontroller="KdQfFc#d5Qebf" data-sfc-root="ep" jsuid="qTnYE_l" data-copy-service-computed-style="font-family: &quot;Google Sans&quot;, Arial, sans-serif, &quot;Noto Color Emoji&quot;; font-size: 16px; font-weight: 400; margin: 0px; text-decoration: none; border-bottom: 0px rgb(230, 232, 240);" style="font-family: &quot;Google Sans&quot;, Arial, sans-serif, &quot;Noto Color Emoji&quot;; font-size: 16px; font-weight: 400; margin: 0px; border-bottom: 0px rgb(230, 232, 240);"></span>&nbsp;<span class="iNqyIf" data-sfc-cp="" jsaction="" jscontroller="KdQfFc#d5Qebf" data-sfc-root="ep" jsuid="qTnYE_l" data-copy-service-computed-style="font-family: &quot;Google Sans&quot;, Arial, sans-serif, &quot;Noto Color Emoji&quot;; font-size: 16px; font-weight: 400; margin: 0px; text-decoration: none; border-bottom: 0px rgb(230, 232, 240);" style="font-family: &quot;Google Sans&quot;, Arial, sans-serif, &quot;Noto Color Emoji&quot;; font-size: 16px; font-weight: 400; margin: 0px; border-bottom: 0px rgb(230, 232, 240);"></span>&nbsp;Andi Amran Sulaiman</h2>
-            <p><span class="iNqyIf" data-sfc-cp="" jsaction="" jscontroller="KdQfFc#d5Qebf" data-sfc-root="ep" jsuid="qTnYE_13" data-copy-service-computed-style="font-family: &quot;Google Sans&quot;, Arial, sans-serif, &quot;Noto Color Emoji&quot;; font-size: 16px; font-weight: 400; margin: 0px; text-decoration: none; border-bottom: 0px rgb(230, 232, 240);" style="font-family: &quot;Google Sans&quot;, Arial, sans-serif, &quot;Noto Color Emoji&quot;; font-size: 16px; margin: 0px; border-bottom: 0px rgb(230, 232, 240);">&nbsp;Menjabat sejak 25 Oktober 2023 dalam kabinet pemerintahan, dan sebelumnya pernah memegang posisi yang sama pada periode 2014–2019.</span></p>
+            <h2>Andi Amran Sulaiman</h2>
+
             <p>
-             Mengawal pencapaian ketahanan serta kemandirian pangan nasional, termasuk komoditas beras.
+                Menjabat sejak 25 Oktober 2023 dalam kabinet pemerintahan,
+                dan sebelumnya pernah memegang posisi yang sama pada
+                periode 2014–2019.
             </p>
-             <p>
-              Mengutamakan penyelesaian langsung permasalahan di lapangan terkait distribusi pupuk bersubsidi dan bantuan alat mesin pertanian (alsintan)
+
+            <p>
+                Mengawal pencapaian ketahanan serta kemandirian pangan
+                nasional, termasuk komoditas beras.
             </p>
-            <br>
+
+            <p>
+                Mengutamakan penyelesaian langsung permasalahan di
+                lapangan terkait distribusi pupuk bersubsidi dan bantuan
+                alat mesin pertanian (alsintan).
+            </p>
         </td>
 
         <!-- TAUTAN LINK -->
-        <td valign="top">
+        <td>
             <h3>Tautan Eksternal</h3>
             <ol>
-                <li><a href="https://www.mawan.net">Website Mawan</a></li>
-                <li><a href="https://github.com">Github</a></li>
-                <li><a href="https://wikipedia.org">Wikipedia</a></li>
-                <li><a href="https://www.w3schools.com">W3Schools</a></li>
+                <li>
+                    <a href="https://www.mawan.net">
+                        Website Mawan
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com">
+                        Github
+                    </a>
+                </li>
+                <li>
+                    <a href="https://wikipedia.org">
+                        Wikipedia
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.w3schools.com">
+                        W3Schools
+                    </a>
+                </li>
             </ol>
         </td>
     </tr>
-        <!-- FOOTER -->
-   <tr bgcolor="#183B4E">
-    <td colspan="2" align="center">
-        <font color="white">
-            <p>Website Ekonomi Indonesia</p>
-        </font>
-<p align="right">
-                <font color="4CAF50" size="2">
-                    &copy; 2026 Wali Ardhi
-                </font>
+
+    <!-- FOOTER -->
+    <tr>
+        <td colspan="2">
+            <p align="center">Website Ekonomi Indonesia</p>
+
+            <p align="right">
+                &copy; 2026 Wali Ardhi
             </p>
-    </td>
-</tr>
+        </td>
+    </tr>
 </table>
+
 </body>
 </html>
